@@ -90,7 +90,7 @@
 
 %%%% 利用tikz来定位照片
 \begin{tikzpicture}[remember picture, overlay] 
-    \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=3cm]{avatar.jpg}};
+    \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=1cm]{avatar.jpg}};
   \end{tikzpicture}%
   %%%% 利用tikz来定位学校Logo，这里只在第一页显示
   \begin{tikzpicture}[remember picture, overlay] 
@@ -133,26 +133,28 @@
 
 % --- 第二个项目 ---
 % 将标题行末尾的 \\ 替换为 \titlebreak 命令
+\textbf{财务管理信息系统} \hfill 2024.08 -- 至今 \titlebreak
+项目描述：面向企业财务管理场景，开发集收支管理、报销管理、财务统计分析于一体的财务管理系统，实现财务数据的集中管理与查询。
+% 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{后端开发}：基于 \textbf{Spring Boot} 搭建系统后端框架，采用分层架构设计，实现用户管理、收支记录、报销审批、财务统计等核心业务模块。
+    \item \textbf{数据持久化}：基于 \textbf{MyBatis} 完成数据库访问层开发，设计并实现用户、账单、报销记录等核心数据表结构，实现业务数据的增删改查。
+    \item \textbf{数据库设计}：基于 \textbf{MySQL} 设计财务管理数据库，建立多表关联关系，完成事务处理与数据一致性控制。
+    \item \textbf{系统优化}：通过分页查询、条件检索及SQL优化提升数据查询效率，改善系统响应性能。
+    \item \textbf{核心产出}：完成从需求分析、数据库设计、后端开发到系统测试的全流程开发，实现企业财务数据的信息化管理。
+\end{itemize}
+% 使用 \projectsep 命令来分隔两个项目
+\projectsep
+
+\section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 科研经历}
+
 \textbf{基于深度学习的晶粒度智能评级系统研发} \hfill 2024.08 -- 至今 \titlebreak
 项目描述：针对传统金相晶粒度评级依赖人工判定、效率低且主观性强的问题，设计并开发基于深度学习的\textbf{自动评级系统}。负责数据处理、模型训练优化、推理服务开发及系统集成，实现晶粒图像的自动分类与评级。
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
     \item \textbf{数据与算法服务}：基于 \textbf{Python/PyTorch} 构建晶粒图像处理与分类服务，完成数据清洗、样本增强、模型训练及推理流程开发，实现晶粒度自动评级。
     \item \textbf{系统开发}：设计并开发晶粒度智能评级系统，实现图像上传、任务管理、结果查询等核心功能，完成模型服务与业务系统集成。
-    \item \textbf{性能优化}：针对晶粒图像分类场景开展模型结构与参数优化实验，通过对比不同数据增强策略和网络配置提升模型准确率与推理效率。
     \item \textbf{核心产出}：完成从\textbf{数据处理、模型训练、服务部署到系统落地}的全流程研发，实现晶粒度评级自动化，显著降低人工检测成本。
-\end{itemize}
-
-% 使用 \projectsep 命令来分隔两个项目
-\projectsep
-
-% --- 第三个项目 ---
-\textbf{AIGC驱动的超进化自动挖坑机 (Agent)} \hfill 2025.02 -- 至今 \titlebreak
-项目描述：为探索心灵版规的边界，以及测试版主锁沉反应速度的极限，本项目基于\textbf{多智能体协作(MCP)与LLM}技术，开发了一款能\textbf{自主“挖坑”与“互坑”}的AI Agent。
-\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{并发与调度}：后端采用 \textbf{Go} 语言，充分利用 \textbf{Goroutine} 和 \textbf{Channel} 的高并发模型，模拟\textbf{用户并发在线}，执行定时挖坑，确保挖坑行动的\textbf{隐蔽性}与\textbf{高效性}。
-    \item \textbf{实时监控与响应}：运用 \textbf{WebSocket} 协议实现了对目标帖子的\textbf{实时监听与交互}。确保在烂坑被识破的第一时间，Agent能光速完成\textbf{“lktp”}或\textbf{反向钓鱼}操作，展现出极高的AI博弈能力。
-    \item \textbf{可视化GUI}：前端使用 \textbf{React} 框架构建了\textbf{后台管理的可视化面板 (Admin Panel)}。可一键下达挖坑指令、动态调整Agent的\textbf{指令}、并实时监控数据。
 \end{itemize}
 
 \section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 技术栈}
