@@ -92,6 +92,13 @@
 \begin{tikzpicture}[remember picture, overlay] 
     \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=1cm]{avatar.jpg}};
   \end{tikzpicture}%
+
+  %%%% 学校logo（左上角）
+\begin{tikzpicture}[remember picture, overlay]
+\node[anchor=north west] at (current page.north west)
+    [xshift=0.6cm, yshift=-0.6cm]
+    {\includegraphics[height=0.5cm]{nwpu.png}};
+\end{tikzpicture}%
  
 \centerline{\LARGE\bfseries{王涵旭}} 
 
