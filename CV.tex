@@ -102,7 +102,11 @@
 
 \centerline{\normalsize{\faGithubSquare\ \href{https://github.com/maksymilan}{https://github.com/maksymilan} \quad \faRssSquare\ \href{https://maksymilan.github.io/}{https://maksymilan.github.io}}} 
     
-\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\ 教育背景}    
+\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\ 教育背景}  
+\textbf{广西大学} \hfill 2020.9 -- 2025.7\\[0.5em] % 标题和正文间加一点距离
+\begin{itemize}[nosep]
+    \item 相关课程：《数据结构》、《计算机组成原理》、《操作系统》、《计算机网络》
+\end{itemize}
 \textbf{西北工业大学} \hfill 2025.9 -- 至今\\[0.5em] % 标题和正文间加一点距离
 计算机技术\quad 研一 
 \begin{itemize}[nosep]
@@ -113,19 +117,36 @@
 
 % --- 第一个项目 ---
 % 将标题行末尾的 \\ 替换为 \titlebreak 命令
-\textbf{98烂坑风控与可视化作战平台} \hfill 2024.08 -- 至今 \titlebreak
-项目描述：为维护cc98社区的讨论纯度、净化“心灵之约”版块风气，本项目旨在对“烂坑”进行科学、严谨的量化分析，并引入\textbf{大语言模型(LLM)}对烂坑帖进行\textbf{自动化情感极性与“离谱指数”标注}。
+\textbf{财务管理信息系统} \hfill 2024.08 -- 至今 \titlebreak
+项目描述：面向企业财务管理场景，开发集收支管理、报销管理、财务统计分析于一体的财务管理系统，实现财务数据的集中管理与查询。
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{数据与后端}：运用 \textbf{Go} 语言及 \textbf{GORM} 框架，实现对全站“烂坑”帖的7x24小时全天候\textbf{抓取}与\textbf{入库}(MySQL)。
-    \item \textbf{可视化前端}：采用原生 \textbf{HTML/CSS/JS} 构建了“烂坑”实时监控\textbf{作战大屏}。实现了坑主成分分析、挖坑热力图、年度烂坑王榜单等\textbf{可视化图表}，并通过 \textbf{AJAX} 异步刷新，确保数据洞察的实时性。
-    \item \textbf{核心产出}：全面掌握了从\textbf{数据采集、清洗、LLM标注到可视化分析}的“反烂坑”全链路技术。
+    \item \textbf{后端开发}：基于 \textbf{Spring Boot} 搭建系统后端框架，采用分层架构设计，实现用户管理、收支记录、报销审批、财务统计等核心业务模块。
+    \item \textbf{数据持久化}：基于 \textbf{MyBatis} 完成数据库访问层开发，设计并实现用户、账单、报销记录等核心数据表结构，实现业务数据的增删改查。
+    \item \textbf{数据库设计}：基于 \textbf{MySQL} 设计财务管理数据库，建立多表关联关系，完成事务处理与数据一致性控制。
+    \item \textbf{系统优化}：通过分页查询、条件检索及SQL优化提升数据查询效率，改善系统响应性能。
+    \item \textbf{核心产出}：完成从需求分析、数据库设计、后端开发到系统测试的全流程开发，实现企业财务数据的信息化管理。
 \end{itemize}
 
 % 使用 \projectsep 命令来分隔两个项目
 \projectsep
 
 % --- 第二个项目 ---
+% 将标题行末尾的 \\ 替换为 \titlebreak 命令
+\textbf{基于深度学习的晶粒度智能评级系统研发} \hfill 2024.08 -- 至今 \titlebreak
+项目描述：针对传统金相晶粒度评级依赖人工判定、效率低且主观性强的问题，设计并开发基于深度学习的\textbf{自动评级系统}。负责数据处理、模型训练优化、推理服务开发及系统集成，实现晶粒图像的自动分类与评级。
+% 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{数据与算法服务}：基于 \textbf{Python/PyTorch} 构建晶粒图像处理与分类服务，完成数据清洗、样本增强、模型训练及推理流程开发，实现晶粒度自动评级。
+    \item \textbf{系统开发}：设计并开发晶粒度智能评级系统，实现图像上传、任务管理、结果查询等核心功能，完成模型服务与业务系统集成。
+    \item \textbf{性能优化}：针对晶粒图像分类场景开展模型结构与参数优化实验，通过对比不同数据增强策略和网络配置提升模型准确率与推理效率。
+    \item \textbf{核心产出}：完成从\textbf{数据处理、模型训练、服务部署到系统落地}的全流程研发，实现晶粒度评级自动化，显著降低人工检测成本。
+\end{itemize}
+
+% 使用 \projectsep 命令来分隔两个项目
+\projectsep
+
+% --- 第三个项目 ---
 \textbf{AIGC驱动的超进化自动挖坑机 (Agent)} \hfill 2025.02 -- 至今 \titlebreak
 项目描述：为探索心灵版规的边界，以及测试版主锁沉反应速度的极限，本项目基于\textbf{多智能体协作(MCP)与LLM}技术，开发了一款能\textbf{自主“挖坑”与“互坑”}的AI Agent。
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
