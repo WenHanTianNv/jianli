@@ -90,23 +90,25 @@
 
 %%%% 利用tikz来定位照片
 \begin{tikzpicture}[remember picture, overlay] 
-    \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=1cm]{avatar.jpg}};
+    \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=2.2cm]{avatar.jpg}};
   \end{tikzpicture}%
 
   %%%% 学校logo（左上角）
 \begin{tikzpicture}[remember picture, overlay]
 \node[anchor=north west] at (current page.north west)
     [xshift=0.6cm, yshift=-0.6cm]
-    {\includegraphics[height=0.5cm]{nwpu.png}};
+    {\includegraphics[height=1.0cm]{nwpu.png}};
 \end{tikzpicture}%
  
 \centerline{\LARGE\bfseries{王涵旭}} 
 
- \centerline{\normalsize{
+\centerline{\normalsize{
 \faPhone\ 135-7103-2105 \quad
 \faEnvelopeO\ \href{mailto:13571032105@163.com}{13571032105@163.com}
 \quad
 \faMapMarker\ 西安
+\quad
+年龄：24
 }}
     
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\ 教育背景}  
@@ -126,7 +128,6 @@
     \item \textbf{数据持久化}：基于 \textbf{MyBatis} 完成数据库访问层开发，设计并实现用户、账单、报销记录等核心数据表结构，实现业务数据的增删改查。
     \item \textbf{数据库设计}：基于 \textbf{MySQL} 设计财务管理数据库，建立多表关联关系，完成事务处理与数据一致性控制。
     \item \textbf{系统优化}：通过分页查询、条件检索及SQL优化提升数据查询效率，改善系统响应性能。
-    \item \textbf{核心产出}：完成从需求分析、数据库设计、后端开发到系统测试的全流程开发，实现企业财务数据的信息化管理。
 \end{itemize}
 
 % 使用 \projectsep 命令来分隔两个项目
