@@ -92,10 +92,7 @@
 \begin{tikzpicture}[remember picture, overlay] 
     \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=1cm]{avatar.jpg}};
   \end{tikzpicture}%
-  %%%% 利用tikz来定位学校Logo，这里只在第一页显示
-  \begin{tikzpicture}[remember picture, overlay] 
-    \node[anchor = north west] at ($(current page.north west)+(0.5cm,-0.5cm)$) {\includegraphics[height=3cm]{nwpu.png}};
-  \end{tikzpicture}%
+ 
 \centerline{\LARGE\bfseries{王涵旭}} 
 
 \centerline{\normalsize{\faPhone\ 111-1111-1111 \quad \faEnvelopeO\ \href{mailto:3230100000@zju.edu.cn}{3230100000@zju.edu.cn}}} 
@@ -103,16 +100,9 @@
 \centerline{\normalsize{\faGithubSquare\ \href{https://github.com/maksymilan}{https://github.com/maksymilan} \quad \faRssSquare\ \href{https://maksymilan.github.io/}{https://maksymilan.github.io}}} 
     
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\ 教育背景}  
-\textbf{广西大学} \hfill 2020.9 -- 2025.7\\[0.5em] % 标题和正文间加一点距离
-计算机科学与技术技术
-\begin{itemize}[nosep]
-    \item 相关课程：《数据结构》、《计算机组成原理》、《操作系统》、《计算机网络》
-\end{itemize}
-\textbf{西北工业大学} \hfill 2025.9 -- 至今\\[0.5em] % 标题和正文间加一点距离
-计算机技术\quad 研一 
-\begin{itemize}[nosep]
-    \item 相关课程：《大规模软件设计与开发》、《数据挖掘》、《视觉目标检测》、《高性能计算》
-\end{itemize}
+\textbf{西北工业大学} 计算机技术（硕士） \hfill 2025.09 -- 至今
+
+\textbf{广西大学} 计算机科学与技术（本科） \hfill 2020.09 -- 2025.07
 
 \section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 项目经历}
 
@@ -134,7 +124,7 @@
 
 % --- 第二个项目 ---
 % 将标题行末尾的 \\ 替换为 \titlebreak 命令
-\textbf风功率预测与可视化分析平台} \hfill 2024.08 -- 至今 \titlebreak
+\textbf{风功率预测与可视化分析平台} \hfill 2024.08 -- 至今 \titlebreak
 项目描述：面向风电场功率预测场景，设计并开发基于 GPT2 的风功率预测平台。构建数据处理、模型推理与可视化分析一体化系统，实现风电时序数据的自动清洗、功率预测及结果展示。
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
@@ -157,22 +147,21 @@
 \end{itemize}
 
 \section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 竞赛经历}
+
 \begin{itemize}[nosep]
-    \item \textbf{第十八届“挑战杯”全国大学生课外学术科技作品竞赛 国家级 三等奖} 项目《计算传播视阈下面向东盟跨文化传播贸易路径研究》 参与 负责数据集获取，数据处理，数据分析，数据可视化，
-模型训练，相关性分析
-    \item \textbf{蓝桥杯程序设计大赛C++组 省级 三等奖}  
-    \item \textbf{全国大学生数学竞赛 省级 一等奖} 
-    \item \textbf{计算机技术与软件专业技术资格考试证书 软件设计师（中级）}
-    
+\item 挑战杯国家级三等奖 | 数学竞赛省一等奖
+\item 蓝桥杯省三等奖 | 软件设计师（中级）
 \end{itemize}
- 
-    
+
+\section{\makebox[\widthof{\faInfo}][c]{\color{CVBlue}\faInfo}\ 技术栈}
+
+\begin{itemize}[parsep=0.5ex]
+\item Java、SpringBoot、MyBatis、MySQL
+\item Python、PyTorch、FastAPI、React、Git、Linux
 \end{itemize}
-    
+
 \section{\makebox[\widthof{\faInfo}][c]{\color{CVBlue}\faInfo}\ 其他}
 \begin{itemize}[parsep=0.5ex]
-    \item \textbf{技术博客：} \href{https://maksymilan.github.io/}{https://maksymilan.github.io/}
-    \item \textbf{GitHub：} \href{https://github.com/maksymilan}{https://github.com/maksymilan} 
     \item \textbf{英语水平：} CET-4, CET-6
 \end{itemize}
 \end{document}
