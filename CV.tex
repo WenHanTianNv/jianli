@@ -104,6 +104,7 @@
     
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\ 教育背景}  
 \textbf{广西大学} \hfill 2020.9 -- 2025.7\\[0.5em] % 标题和正文间加一点距离
+计算机科学与技术技术
 \begin{itemize}[nosep]
     \item 相关课程：《数据结构》、《计算机组成原理》、《操作系统》、《计算机网络》
 \end{itemize}
@@ -133,39 +134,38 @@
 
 % --- 第二个项目 ---
 % 将标题行末尾的 \\ 替换为 \titlebreak 命令
-\textbf{财务管理信息系统} \hfill 2024.08 -- 至今 \titlebreak
-项目描述：面向企业财务管理场景，开发集收支管理、报销管理、财务统计分析于一体的财务管理系统，实现财务数据的集中管理与查询。
+\textbf风功率预测与可视化分析平台} \hfill 2024.08 -- 至今 \titlebreak
+项目描述：面向风电场功率预测场景，设计并开发基于 GPT2 的风功率预测平台。构建数据处理、模型推理与可视化分析一体化系统，实现风电时序数据的自动清洗、功率预测及结果展示。
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{后端开发}：基于 \textbf{Spring Boot} 搭建系统后端框架，采用分层架构设计，实现用户管理、收支记录、报销审批、财务统计等核心业务模块。
-    \item \textbf{数据持久化}：基于 \textbf{MyBatis} 完成数据库访问层开发，设计并实现用户、账单、报销记录等核心数据表结构，实现业务数据的增删改查。
-    \item \textbf{数据库设计}：基于 \textbf{MySQL} 设计财务管理数据库，建立多表关联关系，完成事务处理与数据一致性控制。
+    \item \textbf{风功率预测建模}：基于 \textbf{PyTorch} 对 GPT2 进行改进以及时序预测任务适配与优化，在真实风电数据集上完成小样本与长短期预测实验，并评估其性能。
+    \item \textbf{可视化平台开发}：基于 \textbf{FastAPI + React} 构建风功率预测与可视化系统，实现数据上传、预测任务调度、结果查询与可视化展示的完整链路。
+    \item \textbf{数据库设计}：基于 \textbf{MySQL} 设计时序数据存储结构，实现风电数据清洗（缺失值/异常值处理）与预测结果持久化管理
     \item \textbf{系统优化}：通过分页查询、条件检索及SQL优化提升数据查询效率，改善系统响应性能。
-    \item \textbf{核心产出}：完成从需求分析、数据库设计、后端开发到系统测试的全流程开发，实现企业财务数据的信息化管理。
 \end{itemize}
 % 使用 \projectsep 命令来分隔两个项目
 \projectsep
 
 \section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 科研经历}
 
-\textbf{基于深度学习的晶粒度智能评级系统研发} \hfill 2024.08 -- 至今 \titlebreak
-项目描述：针对传统金相晶粒度评级依赖人工判定、效率低且主观性强的问题，设计并开发基于深度学习的\textbf{自动评级系统}。负责数据处理、模型训练优化、推理服务开发及系统集成，实现晶粒图像的自动分类与评级。
+\textbf{基于深度学习的晶粒度评级方法研究} \hfill 2024.08 -- 至今 \titlebreak
+项目描述：针对传统金相晶粒度评级依赖人工判定、效率低且主观性强的问题，开展基于EfficientNet网络的自动评级方法研究，重点改进网络结构
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{数据与算法服务}：基于 \textbf{Python/PyTorch} 构建晶粒图像处理与分类服务，完成数据清洗、样本增强、模型训练及推理流程开发，实现晶粒度自动评级。
+    \item \textbf{数据与算法服务}：基于 \textbf{EfficientNet} 构建分类基线模型，并引入多尺度特征融合结构以增强特征表达能力，结合标签平滑交叉熵损失函数与 H-Swish 激活函数提升模型泛化性能；设计多视场特征融合分类策略，提高晶粒度评级准确性。
     \item \textbf{系统开发}：设计并开发晶粒度智能评级系统，实现图像上传、任务管理、结果查询等核心功能，完成模型服务与业务系统集成。
-    \item \textbf{核心产出}：完成从\textbf{数据处理、模型训练、服务部署到系统落地}的全流程研发，实现晶粒度评级自动化，显著降低人工检测成本。
 \end{itemize}
 
-\section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 技术栈}
+\section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 竞赛经历}
 \begin{itemize}[nosep]
-    \item \textbf{编程语言：} \textbf{Go}, Python, C++
-    \item \textbf{开发工具：} SSH, Git, Vim, MakeFile,LaTex
-    \item \textbf{操作系统：} Linux
+    \item \textbf{第十八届“挑战杯”全国大学生课外学术科技作品竞赛 国家级 三等奖} 项目《计算传播视阈下面向东盟跨文化传播贸易路径研究》 参与 负责数据集获取，数据处理，数据分析，数据可视化，
+模型训练，相关性分析
+    \item \textbf{蓝桥杯程序设计大赛C++组 省级 三等奖}  
+    \item \textbf{全国大学生数学竞赛 省级 一等奖} 
+    \item \textbf{计算机技术与软件专业技术资格考试证书 软件设计师（中级）}
+    
 \end{itemize}
-\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faList}\ 获奖情况}
-\begin{itemize}
-    \item CC98年度用户 \hfill 2023.12
+ 
     
 \end{itemize}
     
