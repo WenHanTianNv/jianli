@@ -81,7 +81,7 @@
 {}{0em}                      % 可用于为所有 section 添加前缀（如“章节...”）
 {}                           % 可用于在标题前插入代码
 [{\color{CVBlue}\titlerule}]  % 在标题后插入一条横线
-\titlespacing*{\section}{0cm}{*1.2}{*0.9}
+\titlespacing*{\section}{0cm}{*1.2}{*1.0}
 
 
 
@@ -90,7 +90,7 @@
 
 %%%% 利用tikz来定位照片
 \begin{tikzpicture}[remember picture, overlay] 
-    \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=2.2cm]{avatar.jpg}};
+    \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=2.5cm]{avatar.jpg}};
   \end{tikzpicture}%
 
   %%%% 学校logo（左上角）
@@ -147,33 +147,25 @@
 % 使用 \projectsep 命令来分隔两个项目
 \projectsep
 
-\section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 科研经历}
-
-\textbf{基于深度学习的晶粒度评级方法研究} \titlebreak
-项目描述：针对传统金相晶粒度评级依赖人工判定、效率低且主观性强的问题，开展基于EfficientNet网络的自动评级方法研究，重点改进网络结构
-% 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
-\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{数据与算法服务}：基于 \textbf{EfficientNet} 构建分类基线模型，并引入多尺度特征融合结构以增强特征表达能力，结合标签平滑交叉熵损失函数与 H-Swish 激活函数提升模型泛化性能；设计多视场特征融合分类策略，提高晶粒度评级准确性。
-    \item \textbf{系统开发}：设计并开发晶粒度智能评级系统，实现图像上传、任务管理、结果查询等核心功能，完成模型服务与业务系统集成。
-\end{itemize}
-
-\section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 竞赛经历}
+ \section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 竞赛经历}
 
 \begin{itemize}[nosep]
 \item 挑战杯国家级三等奖 | 数学竞赛省一等奖
 \item 蓝桥杯省三等奖 | 软件设计师（中级）
 \end{itemize}
 
-\section{\makebox[\widthof{\faInfo}][c]{\color{CVBlue}\faInfo}\ 技术栈}
+\section{\makebox[\widthof{\faInfo}][c]{\color{CVBlue}\faInfo}\ 专业技能}
 
 \begin{itemize}[parsep=0.5ex]
-\item Java、SpringBoot、MyBatis、MySQL
-\item Python、PyTorch、FastAPI、React、Git、Linux
+\item 编程语言：java、python、C
+\item 会用springboot，MbBatis框架以及MySQL数据库，了解MVC分层思想以及docker容器
+\item 了解html/css/js/vue3的常用命令，熟练使用Git进行版本控制
+\item 熟练掌握intellij IDEA，pycharm等开发工具，善于使用AI辅助
 \end{itemize}
 
 \section{\makebox[\widthof{\faInfo}][c]{\color{CVBlue}\faInfo}\ 其他}
 \begin{itemize}[parsep=0.5ex]
     \item \textbf{英语水平：} CET-6
-    \item 具备较强自学能力，能够快速掌握新技术栈并应用于项目开发
+    \item 个人优势：具备较强自学能力，能够快速掌握新技术栈并应用于项目开发
 \end{itemize}
 \end{document}
