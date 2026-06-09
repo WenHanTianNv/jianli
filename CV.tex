@@ -139,10 +139,12 @@
 项目描述：面向风电场功率预测场景，设计并开发基于 GPT2 的风功率预测平台。构建数据处理、模型推理与可视化分析一体化系统，实现风电时序数据的自动清洗、功率预测及结果展示。
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{风功率预测建模}：基于 \textbf{PyTorch} 对 GPT2 进行改进以及时序预测任务适配与优化，在真实风电数据集上完成小样本与长短期预测实验，并评估其性能。
-    \item \textbf{可视化平台开发}：基于 \textbf{FastAPI + React} 构建风功率预测与可视化系统，实现数据上传、预测任务调度、结果查询与可视化展示的完整链路。
-    \item \textbf{数据库设计}：基于 \textbf{MySQL} 设计时序数据存储结构，实现风电数据清洗（缺失值/异常值处理）与预测结果持久化管理
-    \item \textbf{系统优化}：通过分页查询、条件检索及SQL优化提升数据查询效率，改善系统响应性能。
+    \item \textbf{风功率预测建模}：基于 PyTorch 对 GPT2 进行改进以及时序预测任务的优化，将时序预测模型推理结果通过 REST API 提供给业务系统调用    
+    \item \textbf{后端开发}：基于 Spring Boot + MyBatis 设计后端服务，实现风电时序数据的上传、存储与查询接口，支持批量数据写入与分页检索。 
+    \item \textbf{数据处理与存储设计}：基于 MySQL 设计风电时序数据存储结构，使用线性插值法和四分位法实现缺失值填补与异常值处理，并完成预测结果持久化管理。
+    \item \textbf{任务调度设计}：基于 Quartz 实现定时预测任务调度，支持按风电场维度触发批量预测任务，并设计任务状态管理机制
+    \item \textbf{可视化平台} 基于 React + ECharts 实现可视化模块，支持历史数据、预测结果及实际值对比展示
+    \item \textbf{系统优化}：引入 Redis 缓存热点预测结果，降低重复计算开销，提升接口响应速度
 \end{itemize}
 % 使用 \projectsep 命令来分隔两个项目
 \projectsep
