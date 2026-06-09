@@ -142,7 +142,7 @@
     \item \textbf{风功率预测建模}：基于 PyTorch 对 GPT2 进行改进以及时序预测任务的优化，将时序预测模型推理结果通过 REST API 提供给业务系统调用    
     \item \textbf{后端开发}：基于 Spring Boot + MyBatis 设计后端服务，实现风电时序数据的上传、存储与查询接口，支持批量数据写入与分页检索。 
     \item \textbf{数据处理与存储设计}：基于 MySQL 设计风电时序数据存储结构，使用线性插值法和四分位法实现缺失值填补与异常值处理，并完成预测结果持久化管理。
-    \item \textbf{任务调度设计}：基于 Quartz 实现定时预测任务调度，支持按风电场维度触发批量预测任务，并引入任务状态管理机制（成功/失败/执行中）
+    \item \textbf{任务调度设计}：基于 Quartz 实现定时预测任务调度，支持按风电场维度触发批量预测任务，并引入任务状态管理机制，包括成功/失败/执行中
     \item \textbf{可视化平台} 基于 React + ECharts 实现可视化模块，支持历史数据、预测结果及实际值对比展示
     \item \textbf{系统优化}：引入 Redis 缓存风电预测结果数据，减少重复模型调用，降低高频查询接口响应时间
 \end{itemize}
@@ -163,7 +163,7 @@
 \item 后端技术：Spring Boot、MyBatis、MySQL，理解MVC分层与RESTful API设计
 \item 缓存与中间件：了解 Redis 基本使用与缓存应用场景
 \item 前端基础：了解HTML/CSS/JavaScript的常用命令，了解 Vue3 基本使用
-\item 工具：Git、Docker（了解容器化部署思想），IntelliJ IDEA，pycharm
+\item 工具：Git、了解Docker容器化部署思想，IntelliJ IDEA，pycharm
 \end{itemize}
 
 \section{\makebox[\widthof{\faInfo}][c]{\color{CVBlue}\faInfo}\ 其他}
