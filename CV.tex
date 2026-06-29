@@ -129,7 +129,7 @@
     \item \textbf{主要工作}
     \item  基于 \textbf{Spring Boot} 构建了报销审批以及入账的完整链路，设计报销审批状态机模型，包括待提交、审批中、已通过、已驳回、已入账等状态，实现“申请-审批-入账”的完整流程。采用三层架构提升系统可维护性，将请求处理、业务逻辑与数据访问解耦，其中 Service 层负责核心审批逻辑和状态流转规则，包括状态校验、审批节点推进以及入账触发规则，同时面向接口编程，。
     \item  设计报销，审批与收支相关的数据表，并基于 \textbf{MyBatis} 完成对应数据表的访问层层开发，使用动态SQL，开启数据库自增主键的自动回填机制，实现了主表和明细一对多记录存储，并支持按用户、时间区间与状态的组合查询。
-    \item  在报销审批，修改与入账过程中引入数据库事务控制，保证报销审批状态更新与收支流水写入的原子性。采用状态机 + 乐观锁 + 悲观锁混合控制，同时增加审批幂等校验，避免重复审批或重复入账导致的数据异常。
+    \item  在报销审批，修改与入账过程中引入数据库事务控制，保证报销审批状态更新与收支流水写入的原子性。整体支持并发读写，但采用状态机 + 乐观锁 + 悲观锁混合控制，同时增加审批幂等校验，避免重复审批或重复入账导致的数据异常。
     \item  设计统一RESTful接口规范与标准化返回结构，引入参数校验与异常拦截机制，包括非法状态流转、重复提交拦截等，提升系统健壮性与前后端联调效率。
 \end{itemize}
 
@@ -142,9 +142,9 @@
 项目描述：构建面向工程实践的多智能体 AI 系统，融合 Multi-Agent、RAG、Tool Calling 与 MCP 协议，实现复杂任务自动分解、知识增强推理与工具链协同执行
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textb{主要工作}：
+    \item \textbf{主要工作}：
     \item   设计并实现\textbf{多智能体协作框架}（Multi-Agent），支持任务自动拆解、跨 Agent 分工执行及推理路径可视化，提升复杂任务闭环能力
-    \item   构建\textbf{增强型 RAG 知识库系统}，实现基于文档布局感知的智能分块,支持PDF/Docx/Markdown等文件格式，结合向量检索Milvus与ES关键词检索进行多路召回，提高召回率与准确性
+    \item   构建\textbf{增强型 RAG 知识库系统}，实现基于文档布局感知的智能分块,支持PDF/Docx/Markdown等文件格式，结合向量检索（ChromaDB/Milvus）与ES关键词检索进行多路召回，提高召回率与准确性
     \item   实现\textbf{模型路由与调度系统}，兼容 OpenAI / DeepSeek / 通义千问等多模型协议，支持流式响应（SSE）与多轮上下文管理
     \item   设计\textbf{插件化工具体系}（Tool + Skill + MCP），支持基于 OpenAPI/Swagger 的工具接入与 Skill Prompt 机制，实现模型能力可扩展
     \item   搭建\textbf{自动化 ETL 数据管道}，完成数据抓取、语义增强、向量化入库的全流程，并支持可视化监控与成本分析（Token/延迟）
@@ -164,9 +164,10 @@
 
 \begin{itemize}[parsep=0.5ex]
 \item 编程语言：java、python、C
-\item 后端技术：Spring Boot、MyBatis、MySQL、fastapi，理解MVC分层与RESTful API设计
+\item 后端技术：Spring Boot、MyBatis、MySQL，理解MVC分层与RESTful API设计
 \item 缓存与中间件：了解 Redis 基本使用与缓存应用场景
-\item 工具：Git、了解Docker容器化部署思想
+\item 前端基础：了解HTML/CSS/JavaScript的常用命令，了解 Vue3 基本使用
+\item 工具：Git、了解Docker容器化部署思想，IntelliJ IDEA，pycharm
 \end{itemize}
 
 \section{\makebox[\widthof{\faInfo}][c]{\color{CVBlue}\faInfo}\ 其他}
