@@ -143,12 +143,12 @@
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
     \item \textbf{主要工作}：
-    \item   设计并实现\textbf{多智能体协作框架}（Multi-Agent），支持任务自动拆解、跨 Agent 分工执行及推理路径可视化，提升复杂任务闭环能力
-    \item   构建\textbf{增强型 RAG 知识库系统}，实现基于文档布局感知的智能分块,支持PDF/Docx/Markdown等文件格式，结合向量检索（ChromaDB/Milvus）与ES关键词检索进行多路召回，提高召回率与准确性
-    \item   实现\textbf{模型路由与调度系统}，兼容 OpenAI / DeepSeek / 通义千问等多模型协议，支持流式响应（SSE）与多轮上下文管理
-    \item   设计\textbf{插件化工具体系}（Tool + Skill + MCP），支持基于 OpenAPI/Swagger 的工具接入与 Skill Prompt 机制，实现模型能力可扩展
+    \item   设计并实现\textbf{多智能体协作框架}，支持任务自动拆解、跨 Agent 分工执行及推理路径可视化，提升复杂任务闭环能力
+    \item   构建\textbf{增强型 RAG 知识库系统}，实现基于文档布局感知的智能分块,支持PDF/Docx/Markdown等文件格式，结合向量检索，使用Milvus向量数据库与ES关键词检索进行多路召回，提高召回率与准确性
+    \item   实现\textbf{模型路由与调度系统}，兼容 OpenAI、DeepSeek、通义千问等多模型协议，支持流式响应（SSE）与多轮上下文管理
+    \item   设计\textbf{插件化工具体系}Tool + Skill + MCP，支持基于 OpenAPI/Swagger 的工具接入与 Skill Prompt 机制，实现模型能力可扩展
     \item   搭建\textbf{自动化 ETL 数据管道}，完成数据抓取、语义增强、向量化入库的全流程，并支持可视化监控与成本分析（Token/延迟）
-    \item   基于 Vue3 + Element Plus 构建工作区，实现多会话管理、推理过程展示及工作流编排能力  
+    \item   基于 FastAPI 搭建 Agent 后端服务，实现多会话管理、流式响应及多 Agent 调度能力  
 \end{itemize}
 % 使用 \projectsep 命令来分隔两个项目
 \projectsep
@@ -164,7 +164,7 @@
 
 \begin{itemize}[parsep=0.5ex]
 \item 编程语言：java、python、C
-\item 后端技术：Spring Boot、MyBatis、MySQL，理解MVC分层与RESTful API设计
+\item 后端技术：Spring Boot、MyBatis、MySQL、fastapi，理解MVC分层与RESTful API设计
 \item 缓存与中间件：了解 Redis 基本使用与缓存应用场景
 \item 工具：Git、了解Docker容器化部署思想
 \end{itemize}
