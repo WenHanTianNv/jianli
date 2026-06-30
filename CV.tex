@@ -119,24 +119,7 @@
 \textbf{广西大学} \hspace{0.6em}计算机科学与技术（本科） \hfill 2020.09 -- 2025.07
 
 \section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 项目经历}
-
 % --- 第一个项目 ---
-% 将标题行末尾的 \\ 替换为 \titlebreak 命令
-\textbf{财务管理信息系统} \titlebreak
-项目描述：参与财务管理信息系统的开发，系统包括收支管理、报销管理、财务统计分析，实现财务数据的集中管理与查询。主要负责后端部分报销审批流程和收支管理模块。
-% 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
-\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{主要工作}
-    \item  基于 \textbf{Spring Boot} 构建了报销审批以及入账的完整链路，设计报销审批状态机模型，包括待提交、审批中、已通过、已驳回、已入账等状态，实现“申请-审批-入账”的完整流程。采用三层架构提升系统可维护性，将请求处理、业务逻辑与数据访问解耦，其中 Service 层负责核心审批逻辑和状态流转规则，包括状态校验、审批节点推进以及入账触发规则，同时面向接口编程，。
-    \item  设计报销，审批与收支相关的数据表，并基于 \textbf{MyBatis} 完成对应数据表的访问层层开发，使用动态SQL，开启数据库自增主键的自动回填机制，实现了主表和明细一对多记录存储，并支持按用户、时间区间与状态的组合查询。
-    \item  在报销审批，修改与入账过程中引入数据库事务控制，保证报销审批状态更新与收支流水写入的原子性。整体支持并发读写，但采用状态机 + 乐观锁 + 悲观锁混合控制，同时增加审批幂等校验，避免重复审批或重复入账导致的数据异常。
-    \item  设计统一RESTful接口规范与标准化返回结构，引入参数校验与异常拦截机制，包括非法状态流转、重复提交拦截等，提升系统健壮性与前后端联调效率。
-\end{itemize}
-
-% 使用 \projectsep 命令来分隔两个项目
-\projectsep
-
-% --- 第二个项目 ---
 % 将标题行末尾的 \\ 替换为 \titlebreak 命令
 \textbf{多智能体协同 AI 平台} \titlebreak
 项目描述：构建面向工程实践的多智能体 AI 系统，融合 Multi-Agent、RAG、Tool Calling 与 MCP 协议，实现复杂任务自动分解、知识增强推理与工具链协同执行
@@ -152,7 +135,21 @@
 \end{itemize}
 % 使用 \projectsep 命令来分隔两个项目
 \projectsep
+% --- 第二个项目 ---
+% 将标题行末尾的 \\ 替换为 \titlebreak 命令
+\textbf{财务管理信息系统} \titlebreak
+项目描述：参与财务管理信息系统的开发，系统包括收支管理、报销管理、财务统计分析，实现财务数据的集中管理与查询。主要负责后端部分报销审批流程和收支管理模块。
+% 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{主要工作}
+    \item  基于 \textbf{Spring Boot} 构建了报销审批以及入账的完整链路，设计报销审批状态机模型，包括待提交、审批中、已通过、已驳回、已入账等状态，实现“申请-审批-入账”的完整流程。采用三层架构提升系统可维护性，将请求处理、业务逻辑与数据访问解耦，其中 Service 层负责核心审批逻辑和状态流转规则，包括状态校验、审批节点推进以及入账触发规则，同时面向接口编程，。
+    \item  设计报销，审批与收支相关的数据表，并基于 \textbf{MyBatis} 完成对应数据表的访问层层开发，使用动态SQL，开启数据库自增主键的自动回填机制，实现了主表和明细一对多记录存储，并支持按用户、时间区间与状态的组合查询。
+    \item  在报销审批，修改与入账过程中引入数据库事务控制，保证报销审批状态更新与收支流水写入的原子性。整体支持并发读写，但采用状态机 + 乐观锁 + 悲观锁混合控制，同时增加审批幂等校验，避免重复审批或重复入账导致的数据异常。
+    \item  设计统一RESTful接口规范与标准化返回结构，引入参数校验与异常拦截机制，包括非法状态流转、重复提交拦截等，提升系统健壮性与前后端联调效率。
+\end{itemize}
 
+% 使用 \projectsep 命令来分隔两个项目
+\projectsep
  \section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 竞赛经历}
 
 \begin{itemize}[nosep]
